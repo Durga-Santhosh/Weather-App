@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body> 
+    <div class="menu">           
+        
+        <div class="menu2">
+            <a onclick=" menu_out()">x</a>
+            <a onclick=" menu_out()" href="#hero">Home</a>
+            <a onclick=" menu_out()" href="#weekly">Weekly</a>
+            <a onclick=" menu_out()" href="#condations">Condations</a>
+            <a onclick=" menu_out()" href="#about">About</a>
+        </div>
+        </div>
    <main>
     <header>
         <div class="logo">
@@ -21,19 +31,11 @@
             <a href="#condations">Condations</a>
             <a href="#about">About</a>
         </div>
-        <div class="menu">
-            <div class="menu1">
-                <p>x</p>
-            <i class="fa-solid fa-bars"></i>
-           
-        </div>
-        <div class="menu2">
-            <a href="#hero">Home</a>
-            <a href="#weekly">Weekly</a>
-            <a href="#condations">Condations</a>
-            <a href="#about">About</a>
-        </div>
-        </div>
+        <div class="menu1">
+            <p><i class="fa-solid fa-x"></i></p>
+        <i class="fa-solid fa-bars" onclick="menu_in()"></i>
+       
+    </div>
     </header>
 
     <nav>

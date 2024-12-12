@@ -6,21 +6,15 @@ let cond=document.querySelector(".conduction");
 let locat=document.querySelector(".locl");
 let mainImg=document.querySelector("main");
 let icon=document.querySelector(".weather-icon img");
-//menu bar
-let menu=document.querySelector(".menu1 i");
-menu.addEventListener("click",()=>{
-  document.querySelector(".menu2").style.transform="translateX(0px)";
-  document.querySelector(".menu2").style.transition= "all 1s";
-  menu.style.display="none";
-  menu2.style.display="flex";
-})
-let menu2=document.querySelector(".menu p");
-menu2.addEventListener("click",()=>{
-  document.querySelector(".menu2").style.transform="translateX(170px)";
-  document.querySelector(".menu2").style.transition= "all 1s";
-  menu.style.display="flex";
-  menu2.style.display="none"
-})
+
+let menu=document.querySelector(".menu")
+function menu_in(){
+  menu.style.right="0px";
+}
+function menu_out(){
+  menu.style.right="-200px";
+
+  }
 
 //search function
 btn.addEventListener("click", async ()=>{
